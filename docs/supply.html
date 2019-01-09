@@ -1,0 +1,2712 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_bed1139dc2734c25893a63f81a541b7d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_bed1139dc2734c25893a63f81a541b7d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_bed1139dc2734c25893a63f81a541b7d = L.map(
+        'map_bed1139dc2734c25893a63f81a541b7d', {
+        center: [1.3521, 103.8198],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_eeaee11ff1b247b1b7e4acc60c97d36a = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_bed1139dc2734c25893a63f81a541b7d);
+    
+            var marker_cluster_48945afdbcbf447cb7728a59e9916ac6 = L.markerClusterGroup({});
+            map_bed1139dc2734c25893a63f81a541b7d.addLayer(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+            
+    
+        var marker_e24d7cddddf84c25a991f53b62e03946 = L.marker(
+            [1.27866784718787, 103.81752660481],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e24d7cddddf84c25a991f53b62e03946.bindTooltip(
+            `<div>`
+            + `THK SAC @ Telok Blangah Crescent / Apex Club of Singapore (City) @ Blk 5A` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2f2ef036b3bd4f6e97df9f064f7ae46e = L.marker(
+            [1.27875992006856, 103.818443086311],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2f2ef036b3bd4f6e97df9f064f7ae46e.bindTooltip(
+            `<div>`
+            + `THK SAC @ Telok Blangah Crescent @ Blk 3` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9734b49b9030486a98cb77cbbaa63f98 = L.marker(
+            [1.27369223572503, 103.821113774307],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_9734b49b9030486a98cb77cbbaa63f98.bindTooltip(
+            `<div>`
+            + `Beyond Social Services` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_03bd481842ca4bb7b44edd28024d4fbb = L.marker(
+            [1.33701100762296, 103.738787314099],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_03bd481842ca4bb7b44edd28024d4fbb.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_865aacef76c74eb88f4a1a5a192529be = L.marker(
+            [1.33609657873555, 103.738219191663],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_865aacef76c74eb88f4a1a5a192529be.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_01add1d7cd8c44f38a5ad17e917c5b9a = L.marker(
+            [1.33658465311806, 103.737623303842],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_01add1d7cd8c44f38a5ad17e917c5b9a.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0778296201a24a05ac623ba7d4c49f15 = L.marker(
+            [1.33738746819333, 103.738527627347],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_0778296201a24a05ac623ba7d4c49f15.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_57693a3333ac483c945016c200e3ffc9 = L.marker(
+            [1.29750644501068, 103.802257197297],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_57693a3333ac483c945016c200e3ffc9.bindTooltip(
+            `<div>`
+            + `Beyond Social Services` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_71fa2e18dc4c4a608edc4ca51fbe69c2 = L.marker(
+            [1.33887088246407, 103.736218506114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_71fa2e18dc4c4a608edc4ca51fbe69c2.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fbf0f5dd15d04352a8386fb1f992db74 = L.marker(
+            [1.33388558101656, 103.723688445754],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_fbf0f5dd15d04352a8386fb1f992db74.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f890a598c4b84704a890b178d81fed9e = L.marker(
+            [1.33879791361245, 103.734807724832],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f890a598c4b84704a890b178d81fed9e.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fa4b153e7e7f4d43a5499f169e1352a8 = L.marker(
+            [1.3331844982927, 103.724354324887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_fa4b153e7e7f4d43a5499f169e1352a8.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_667c697bda774db599476b47a3711891 = L.marker(
+            [1.33979148822908, 103.735502765561],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_667c697bda774db599476b47a3711891.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ed75c2a0d23943cba242023b1d8b1906 = L.marker(
+            [1.28543545058101, 103.818782583669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ed75c2a0d23943cba242023b1d8b1906.bindTooltip(
+            `<div>`
+            + `Apex Club of Singapore (Bukit Timah)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_edc1ae23d5b7404cbf4d9b7d614f0fc6 = L.marker(
+            [1.28499476957911, 103.818758492626],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_edc1ae23d5b7404cbf4d9b7d614f0fc6.bindTooltip(
+            `<div>`
+            + `Apex Club of Singapore` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_df25be31726343f7a4545e6dcce94377 = L.marker(
+            [1.28786782741027, 103.820464876931],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_df25be31726343f7a4545e6dcce94377.bindTooltip(
+            `<div>`
+            + `Food Bank, Beyond Social Services, Jamiyah Food Bank, THK SAC @ Henderson (Satellite 93) @ Blk 93` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a71ab37247e4481f85f82a099e4eccb4 = L.marker(
+            [1.28739941701582, 103.820443576405],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a71ab37247e4481f85f82a099e4eccb4.bindTooltip(
+            `<div>`
+            + `Food Bank, Beyond Social Services, Jamiyah Food Bank, THK SAC @ Henderson (Satellite 93) @ Blk 93` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f718c78d96e241768e5457fc464342e6 = L.marker(
+            [1.28692453254083, 103.820418500703],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f718c78d96e241768e5457fc464342e6.bindTooltip(
+            `<div>`
+            + `Food Bank, Beyond Social Services, Jamiyah Food Bank, THK SAC @ Henderson (Satellite 93) @ Blk 93` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_09d390ff330347d78a9e0042c622c72f = L.marker(
+            [1.28821077489027, 103.814148003065],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_09d390ff330347d78a9e0042c622c72f.bindTooltip(
+            `<div>`
+            + `Free Food For All` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e1441b521d604827adcb0f70d9b332e2 = L.marker(
+            [1.28430105508163, 103.821907213378],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e1441b521d604827adcb0f70d9b332e2.bindTooltip(
+            `<div>`
+            + `THK SAC @ Bukit Merah View @ Blk 118` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_68cb713752d945a5a5a7fa6b6b40fc2e = L.marker(
+            [1.28413291405014, 103.82320299259],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_68cb713752d945a5a5a7fa6b6b40fc2e.bindTooltip(
+            `<div>`
+            + `THK SAC @ Bukit Merah View @ Blk 118?` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6f968e1b84e34901b6f8acfaa1f8ece2 = L.marker(
+            [1.28277443239485, 103.822612454246],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6f968e1b84e34901b6f8acfaa1f8ece2.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, THK SAC @ Bukit Merah View @ Blk 118?` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ddfab74f4bec418290ddb6a392cec879 = L.marker(
+            [1.28906268398971, 103.826704497888],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ddfab74f4bec418290ddb6a392cec879.bindTooltip(
+            `<div>`
+            + `THK SAC @ Beo Crescent @ Blk 44` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_04d67b96ab09486590a8596a9a6dc304 = L.marker(
+            [1.28880916286411, 103.82629508593],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_04d67b96ab09486590a8596a9a6dc304.bindTooltip(
+            `<div>`
+            + `THK SAC @ Beo Crescent @ Blk 44` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a2386df3af1a412fbc52b5c14437fe25 = L.marker(
+            [1.28102515462895, 103.82446093445],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a2386df3af1a412fbc52b5c14437fe25.bindTooltip(
+            `<div>`
+            + `Beyond Social Service, Sincere Hope` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ec4cf2782a34351ae713a417ca3e055 = L.marker(
+            [1.28063239751756, 103.824935469367],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6ec4cf2782a34351ae713a417ca3e055.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Sincere Hope, Apex Club of Singapore (City), YWCA Meals on Wheels, Singapore Buddhist Lodge` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eb28044c21ec4e5eb888c5a202ab6ce5 = L.marker(
+            [1.28024258715199, 103.824523574131],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_eb28044c21ec4e5eb888c5a202ab6ce5.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Sincere Hope` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_60a337d4ccc84d85b9044b4943602502 = L.marker(
+            [1.27974755603933, 103.826698196427],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_60a337d4ccc84d85b9044b4943602502.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Sincere Hope` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_643d09d572e6408a97317f4208bbedf0 = L.marker(
+            [1.28108139632866, 103.826489308768],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_643d09d572e6408a97317f4208bbedf0.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Sincere Hope` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2943560597314823a15eb0888ef1aa6f = L.marker(
+            [1.29107462413346, 103.828690172458],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2943560597314823a15eb0888ef1aa6f.bindTooltip(
+            `<div>`
+            + `CDL, THK Indus Moral CARE` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_208b6aab14074ffe8dc917dec2813a06 = L.marker(
+            [1.30758230206091, 103.858967398343],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_208b6aab14074ffe8dc917dec2813a06.bindTooltip(
+            `<div>`
+            + `Beyond Social Services` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2638025061ac48e2953ff89daafb66fe = L.marker(
+            [1.30940810453702, 103.788085613356],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2638025061ac48e2953ff89daafb66fe.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Genuine Hearts` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f1ce80929a0f4b389d294e969c2fb4da = L.marker(
+            [1.30989225871344, 103.787432226528],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f1ce80929a0f4b389d294e969c2fb4da.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Genuine Hearts` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7ac48178592a40a198a6433f48cf4e77 = L.marker(
+            [1.3101505468601, 103.787082418192],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7ac48178592a40a198a6433f48cf4e77.bindTooltip(
+            `<div>`
+            + `Beyond Social Services, Genuine Hearts` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6dbd5703d2a243178c8e0f46a0a020df = L.marker(
+            [1.30921937771546, 103.796732386696],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6dbd5703d2a243178c8e0f46a0a020df.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3c8e43ae2976464caf39f908bbc76748 = L.marker(
+            [1.33865954756921, 103.855806480101],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_3c8e43ae2976464caf39f908bbc76748.bindTooltip(
+            `<div>`
+            + `Care Corner SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a3d7bc78c2934053afe3fbd86ba04809 = L.marker(
+            [1.33592183813401, 103.859058481639],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a3d7bc78c2934053afe3fbd86ba04809.bindTooltip(
+            `<div>`
+            + `THK SAC @ Blk 15 ` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_baad4e6fef37454a9c8a516850fe04f5 = L.marker(
+            [1.33309079499325, 103.853798045165],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_baad4e6fef37454a9c8a516850fe04f5.bindTooltip(
+            `<div>`
+            + `THK SAC @ Toa Payoh 31` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ff1b699bb9e245b68cfe1dc232d290d6 = L.marker(
+            [1.3332183645542, 103.854517221385],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ff1b699bb9e245b68cfe1dc232d290d6.bindTooltip(
+            `<div>`
+            + `THK SAC @ Toa Payoh 31` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fc283ffa639640a88484ab098d41d35e = L.marker(
+            [1.33843639958333, 103.742666850845],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_fc283ffa639640a88484ab098d41d35e.bindTooltip(
+            `<div>`
+            + `THKMC (West) ` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1d291e639ba84d998820b37af71a547c = L.marker(
+            [1.33702929645872, 103.850382795362],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_1d291e639ba84d998820b37af71a547c.bindTooltip(
+            `<div>`
+            + `Fei Yue FSC, Care Corner SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1acce5bf1aa64a2db275cb874d213cc7 = L.marker(
+            [1.33889493784686, 103.73855509854],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_1acce5bf1aa64a2db275cb874d213cc7.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f94cd8fa6be44790a03ad0c2dc12fa9f = L.marker(
+            [1.3361521817861, 103.852029508505],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f94cd8fa6be44790a03ad0c2dc12fa9f.bindTooltip(
+            `<div>`
+            + `Free Food For All, Care Corner SAC @Blk 62B` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6d116513e00b4abc8877ae2145de0d74 = L.marker(
+            [1.33866911059388, 103.740292528065],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6d116513e00b4abc8877ae2145de0d74.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1cb6a767d959435fb7aa2837bb752cc2 = L.marker(
+            [1.33996762299819, 103.738041056685],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_1cb6a767d959435fb7aa2837bb752cc2.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a3ac91b002ad4dbfa92993274ceae59f = L.marker(
+            [1.34042195552494, 103.848185018749],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a3ac91b002ad4dbfa92993274ceae59f.bindTooltip(
+            `<div>`
+            + `Care Corner SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3619f8707b4b4570a4fe10c98f214b39 = L.marker(
+            [1.33378491718626, 103.84376074201],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_3619f8707b4b4570a4fe10c98f214b39.bindTooltip(
+            `<div>`
+            + `Care Corner SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7ee908c5ab174ffc8223cb86b8a2bc25 = L.marker(
+            [1.3420865004307, 103.736825653173],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7ee908c5ab174ffc8223cb86b8a2bc25.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7f3af59fbf7545d6bbf915b21b2a80b1 = L.marker(
+            [1.34183055675238, 103.738020275061],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7f3af59fbf7545d6bbf915b21b2a80b1.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_74d1e378ff1d44e5be0f8b495f75c1bd = L.marker(
+            [1.34908254998385, 103.754518186115],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_74d1e378ff1d44e5be0f8b495f75c1bd.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ff746c2a2aef42c7af6f51d056a3b0b6 = L.marker(
+            [1.34112749546642, 103.738101187795],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ff746c2a2aef42c7af6f51d056a3b0b6.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_441c8f63546a4ad3bc2f56a796d48761 = L.marker(
+            [1.34882526465973, 103.755127558884],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_441c8f63546a4ad3bc2f56a796d48761.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d1fbb6c256ac40fc8b5601e249c79573 = L.marker(
+            [1.34037462134715, 103.740936554727],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d1fbb6c256ac40fc8b5601e249c79573.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d5528c948d6648ab806cee4cb4382134 = L.marker(
+            [1.34848352110459, 103.756300449103],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d5528c948d6648ab806cee4cb4382134.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cdb4981fac3e4d269d6e7c4f350f9555 = L.marker(
+            [1.3404069111843, 103.742128554131],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_cdb4981fac3e4d269d6e7c4f350f9555.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b7e1b1abbc94658812cadb7ea9079bf = L.marker(
+            [1.33094425474351, 103.845020410471],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2b7e1b1abbc94658812cadb7ea9079bf.bindTooltip(
+            `<div>`
+            + `Care Corner SAC @ Blk 158` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_79b5ff96ed704a9cb6bb2634114321c1 = L.marker(
+            [1.35048816023781, 103.754177773165],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_79b5ff96ed704a9cb6bb2634114321c1.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_16cec53929b84498803d9006e86d05da = L.marker(
+            [1.34106751096497, 103.741573199896],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_16cec53929b84498803d9006e86d05da.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e8f0debbc2b84f0aaceecd7f515e71b4 = L.marker(
+            [1.35089523644523, 103.75454446951],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e8f0debbc2b84f0aaceecd7f515e71b4.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_26f7d8d55b60449d9e94893cde054084 = L.marker(
+            [1.34962013436362, 103.75643213653],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_26f7d8d55b60449d9e94893cde054084.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_59ac41f0d6a64689b792152109096af2 = L.marker(
+            [1.3313192701689, 103.842668711023],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_59ac41f0d6a64689b792152109096af2.bindTooltip(
+            `<div>`
+            + `Care Corner SAC / Apex Club of Singapore (Radin Mas)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cb07319f727c4531b127d2e404eae3c1 = L.marker(
+            [1.34202424550412, 103.739009746539],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_cb07319f727c4531b127d2e404eae3c1.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6113e7dfc9b7420c869ef950581f20f5 = L.marker(
+            [1.34227314306728, 103.740101374257],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6113e7dfc9b7420c869ef950581f20f5.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a03017685250420c90f6549c26646a35 = L.marker(
+            [1.35105549277868, 103.757080302123],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a03017685250420c90f6549c26646a35.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e896d71142c04b81881eb47a68520f65 = L.marker(
+            [1.34316585637537, 103.73967649195],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e896d71142c04b81881eb47a68520f65.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c1a6bc2b796b44a387a336ec82c65089 = L.marker(
+            [1.34306217556915, 103.738233469424],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_c1a6bc2b796b44a387a336ec82c65089.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_58f36385b8514b34b531efb353e5d656 = L.marker(
+            [1.3508503792966, 103.758378409026],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_58f36385b8514b34b531efb353e5d656.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e2a1c8b055aa4320b370da67c1bca682 = L.marker(
+            [1.34416527251748, 103.738263367232],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e2a1c8b055aa4320b370da67c1bca682.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7a2b859cc7ea41ea85a7f356e9c355cc = L.marker(
+            [1.34451804267552, 103.738630332612],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7a2b859cc7ea41ea85a7f356e9c355cc.bindTooltip(
+            `<div>`
+            + `PA (Yuhua), Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5d8afdb2f5c646fc8374ec276cdeb9fa = L.marker(
+            [1.35091259231108, 103.759021061327],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5d8afdb2f5c646fc8374ec276cdeb9fa.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ee439d9440b4aa39a991743acc4eaf3 = L.marker(
+            [1.34412714311527, 103.741112405413],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5ee439d9440b4aa39a991743acc4eaf3.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_702c35a0b4d342bcbe56b77a16354a75 = L.marker(
+            [1.35029153722117, 103.759090413855],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_702c35a0b4d342bcbe56b77a16354a75.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d5faafd499b4453b81197ec623287666 = L.marker(
+            [1.34434377958263, 103.741796120846],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d5faafd499b4453b81197ec623287666.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b2c419abfe8343edac6ce26af2c6899e = L.marker(
+            [1.34382869717496, 103.741654163177],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_b2c419abfe8343edac6ce26af2c6899e.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b62c095f6f9e41909243ab2dd822c55b = L.marker(
+            [1.34875788419222, 103.759451695253],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_b62c095f6f9e41909243ab2dd822c55b.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c0af3bd85b59458d819a42eede74b10c = L.marker(
+            [1.34817263842503, 103.758893085449],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_c0af3bd85b59458d819a42eede74b10c.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5765b5215ab344e799a65cfaa526802d = L.marker(
+            [1.34881544166241, 103.757951913114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5765b5215ab344e799a65cfaa526802d.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_34b7773af287481c87c12762146455f3 = L.marker(
+            [1.34617496464414, 103.757832392184],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_34b7773af287481c87c12762146455f3.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7b44444ba6ca45a29ad5c8a17a147f8e = L.marker(
+            [1.34551240744245, 103.758897488955],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7b44444ba6ca45a29ad5c8a17a147f8e.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_af7d221309914e61be9a6efee87d5ba3 = L.marker(
+            [1.34337777770125, 103.757174736965],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_af7d221309914e61be9a6efee87d5ba3.bindTooltip(
+            `<div>`
+            + `THKMC (West)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bbfc1cdeed7d48e5aceff2438dacf92a = L.marker(
+            [1.32817782909929, 103.88647835429],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_bbfc1cdeed7d48e5aceff2438dacf92a.bindTooltip(
+            `<div>`
+            + `Free Food For All` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a067ec874c874c929bf8e55b687f6747 = L.marker(
+            [1.3245204519168, 103.885514575324],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a067ec874c874c929bf8e55b687f6747.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e524bfed51114cc0b9074b9b6b66af02 = L.marker(
+            [1.3242085141172, 103.885466916786],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e524bfed51114cc0b9074b9b6b66af02.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3c49e14d3ecf4a7894a40e4ab48c9e35 = L.marker(
+            [1.34404144956676, 103.735500080389],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_3c49e14d3ecf4a7894a40e4ab48c9e35.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ed37edd6f874465b964284dcb61bf090 = L.marker(
+            [1.34465302453658, 103.734485227961],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ed37edd6f874465b964284dcb61bf090.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bea8fdf2e4214cb5bbe9c40bf470d5bf = L.marker(
+            [1.34485611194657, 103.735622181477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_bea8fdf2e4214cb5bbe9c40bf470d5bf.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_38f47ce732834e53b9ca3fffe9283a1a = L.marker(
+            [1.34514468788691, 103.734750459542],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_38f47ce732834e53b9ca3fffe9283a1a.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aacae3144a664377a0e71c8fd662cf41 = L.marker(
+            [1.34652151786556, 103.734843138868],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_aacae3144a664377a0e71c8fd662cf41.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2d28f05cda20437198bb0b3ffe299556 = L.marker(
+            [1.34730790760384, 103.734583963199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2d28f05cda20437198bb0b3ffe299556.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a1a6e575327649638fdeb012d9684b51 = L.marker(
+            [1.32546801109541, 103.888077424417],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a1a6e575327649638fdeb012d9684b51.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_95c0000175934d49b7505e9958029b7e = L.marker(
+            [1.32519591330305, 103.888039969791],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_95c0000175934d49b7505e9958029b7e.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a8c23dd73eaf4fdfb92edd05a3e300e8 = L.marker(
+            [1.32491504386777, 103.887996817126],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a8c23dd73eaf4fdfb92edd05a3e300e8.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_165304b213f045fdba92584c21512b99 = L.marker(
+            [1.32454761102541, 103.887943886744],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_165304b213f045fdba92584c21512b99.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc1ad30e163c4ac7843ed59734de6c73 = L.marker(
+            [1.32337965213729, 103.886521328286],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_dc1ad30e163c4ac7843ed59734de6c73.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f863ae0d4d144d749c69f3cf9904c758 = L.marker(
+            [1.34798942321202, 103.7304582035],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f863ae0d4d144d749c69f3cf9904c758.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cb72582bf605423f8561c3fa1f3fe069 = L.marker(
+            [1.34902182441111, 103.729609271898],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_cb72582bf605423f8561c3fa1f3fe069.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Yuhua)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_968302ccc8b04a45b600a782bffea7c1 = L.marker(
+            [1.34603432938683, 103.732850513855],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_968302ccc8b04a45b600a782bffea7c1.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_68f88d36907b4898ba858837723defb5 = L.marker(
+            [1.32319532967273, 103.888456810148],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_68f88d36907b4898ba858837723defb5.bindTooltip(
+            `<div>`
+            + `THK Seniors Activity Centre @ MacPherson @ Blk 90` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eb301dd73ca9469ba7b996e08c3b1ebe = L.marker(
+            [1.35055495259485, 103.73002911041],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_eb301dd73ca9469ba7b996e08c3b1ebe.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_58f31e56d125436f93c670e1b36994cd = L.marker(
+            [1.33769966406233, 103.722790261602],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_58f31e56d125436f93c670e1b36994cd.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6a56d31e3d75477a9c1ae28fd8c74faf = L.marker(
+            [1.34920755762648, 103.731256052741],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_6a56d31e3d75477a9c1ae28fd8c74faf.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c0a1a43bf8c049028bb11c542a9caf20 = L.marker(
+            [1.31067221805461, 103.88503171279],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_c0a1a43bf8c049028bb11c542a9caf20.bindTooltip(
+            `<div>`
+            + `THK SAC @ Cassia Crescent` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cb2a3e04630e478aab186c18a9bd187d = L.marker(
+            [1.30488137124496, 103.913940016959],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_cb2a3e04630e478aab186c18a9bd187d.bindTooltip(
+            `<div>`
+            + `Willing Hearts, Di Zang Lin, SG Food Rescue` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_561db4eed6ba42b083ed21a33dfe184f = L.marker(
+            [1.30437184984084, 103.914041662117],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_561db4eed6ba42b083ed21a33dfe184f.bindTooltip(
+            `<div>`
+            + `Willing Hearts, Di Zang Lin, SG Food Rescue` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4c72f1259f9a4c2190cd47dc30803093 = L.marker(
+            [1.30584796547519, 103.91630683724],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_4c72f1259f9a4c2190cd47dc30803093.bindTooltip(
+            `<div>`
+            + `Willing Hearts, Di Zang Lin` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a0af5ce115314a6b93bcd848bf2bf2b5 = L.marker(
+            [1.32110310080968, 103.936900156912],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a0af5ce115314a6b93bcd848bf2bf2b5.bindTooltip(
+            `<div>`
+            + `THK Bedok Radiance SAC, Workers Party & Food Bank` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f25aa2ca1f574121b69ae352f420b890 = L.marker(
+            [1.32040512272506, 103.936741204279],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f25aa2ca1f574121b69ae352f420b890.bindTooltip(
+            `<div>`
+            + `Workers Party & Food Bank` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_67bc19e9a9c64cc09434cae22b643b5f = L.marker(
+            [1.32481189041194, 103.92253370146],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_67bc19e9a9c64cc09434cae22b643b5f.bindTooltip(
+            `<div>`
+            + `Willing Hearts, THKMC (East), CDL` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_857280461e994d0781eb3f5df3abbe1f = L.marker(
+            [1.33224019718697, 103.92890624288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_857280461e994d0781eb3f5df3abbe1f.bindTooltip(
+            `<div>`
+            + `THKMC (East), THK SAC @ Kaki Bukit @ Blk 509B` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e585fe182c1948939b90230dffab7b6b = L.marker(
+            [1.32524214174053, 103.921811368429],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e585fe182c1948939b90230dffab7b6b.bindTooltip(
+            `<div>`
+            + `THKMC (East), CDL, Willing Hearts` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3b571378474349d6ae7c1301908c3064 = L.marker(
+            [1.3252617788382, 103.922628137628],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_3b571378474349d6ae7c1301908c3064.bindTooltip(
+            `<div>`
+            + `THKMC (East), CDL, Willing Hearts` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d94a06faef4d4b79a7c7f96f5ce1f54b = L.marker(
+            [1.35086329358712, 103.725435180772],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d94a06faef4d4b79a7c7f96f5ce1f54b.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_efead1ded6a046eb9734140702d5b8d8 = L.marker(
+            [1.35230306526459, 103.72463219774],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_efead1ded6a046eb9734140702d5b8d8.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d31f8acb316f45489e4e514143027d1b = L.marker(
+            [1.35131146892729, 103.722836259059],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d31f8acb316f45489e4e514143027d1b.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e53c982e81714e82baa741da7a71e96f = L.marker(
+            [1.35067572843473, 103.720022392894],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e53c982e81714e82baa741da7a71e96f.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_487f6a700d2b4eedacbe9e056f592b7b = L.marker(
+            [1.35057698710495, 103.723241115887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_487f6a700d2b4eedacbe9e056f592b7b.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5cdeca7bab944721b8ebcbed9198a787 = L.marker(
+            [1.34968879331183, 103.954286403192],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5cdeca7bab944721b8ebcbed9198a787.bindTooltip(
+            `<div>`
+            + `Care Corner FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f7ddb7ebc19b4ec99cbcc90f0cdb22c0 = L.marker(
+            [1.34684766009463, 103.724041804477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f7ddb7ebc19b4ec99cbcc90f0cdb22c0.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_28d16d6f0b124020877114ef7fe2fad0 = L.marker(
+            [1.34820888556578, 103.726357754906],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_28d16d6f0b124020877114ef7fe2fad0.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1b5be5a12e9e4358817682c4480599e9 = L.marker(
+            [1.3495865657325, 103.72631531647],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_1b5be5a12e9e4358817682c4480599e9.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e04894b27bf745eb9ef5a112759ca79a = L.marker(
+            [1.34863856808838, 103.725086725184],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e04894b27bf745eb9ef5a112759ca79a.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9bb3c807338b4ede89ddbeccfec6751b = L.marker(
+            [1.34918475097232, 103.888464914524],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_9bb3c807338b4ede89ddbeccfec6751b.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC @ Blk 174A` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_293adda9bc014059b0045dd3a82faa4b = L.marker(
+            [1.39047126956208, 103.909215796683],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_293adda9bc014059b0045dd3a82faa4b.bindTooltip(
+            `<div>`
+            + `COMNET SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc4642f930db46f38529c5f46324e640 = L.marker(
+            [1.33369345595933, 103.930396926009],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_dc4642f930db46f38529c5f46324e640.bindTooltip(
+            `<div>`
+            + `THKMC (East)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a3fba1bba7a3433bbc3b57e5f265f0f9 = L.marker(
+            [1.37295570309758, 103.836400137659],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a3fba1bba7a3433bbc3b57e5f265f0f9.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 257` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5517b84560cb40a9860e7cf531856379 = L.marker(
+            [1.37334635014912, 103.8364593481],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5517b84560cb40a9860e7cf531856379.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 257` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_05c2f8b17b8c4b539aef71f92985e548 = L.marker(
+            [1.37048118793195, 103.844805800791],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_05c2f8b17b8c4b539aef71f92985e548.bindTooltip(
+            `<div>`
+            + `AWWA Community Home For Senior Citizen` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_36bd16d158e14c9ba1b5654209538f85 = L.marker(
+            [1.36761615151369, 103.844214617422],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_36bd16d158e14c9ba1b5654209538f85.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 208` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ee1ce4638e4a458497b7245b0a2a32fe = L.marker(
+            [1.3666310457955, 103.843360725316],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_ee1ce4638e4a458497b7245b0a2a32fe.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 208` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5a9618b29eb647e18036d1777c4d4fa1 = L.marker(
+            [1.34642397230744, 103.720898095436],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5a9618b29eb647e18036d1777c4d4fa1.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b0178f1534474704af72a078ef1da99d = L.marker(
+            [1.3450868138407, 103.717978485296],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_b0178f1534474704af72a078ef1da99d.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b4675f0234634f37bfec3b4349ff6e66 = L.marker(
+            [1.36552591102017, 103.841812594637],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_b4675f0234634f37bfec3b4349ff6e66.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 208, SG Food Rescue` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2f58c8e08d2a4337ac922d26717201f7 = L.marker(
+            [1.36652735866591, 103.838244397593],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_2f58c8e08d2a4337ac922d26717201f7.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 208` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_60136f5d9e7349fabdcb3ee926b614ec = L.marker(
+            [1.36727972383183, 103.834626064665],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_60136f5d9e7349fabdcb3ee926b614ec.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 257` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4426a93b1acd4cc69580fd4779a75bf3 = L.marker(
+            [1.28848713394651, 103.813351513103],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_4426a93b1acd4cc69580fd4779a75bf3.bindTooltip(
+            `<div>`
+            + `Free Food For All, South Central Community FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_acfe44afacef494bbcd38aa5e3b7e636 = L.marker(
+            [1.36768706259192, 103.834747335102],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_acfe44afacef494bbcd38aa5e3b7e636.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 257` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e0a0c1864f294cf49fd46c47bf53dbf0 = L.marker(
+            [1.37017011394311, 103.835782464252],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_e0a0c1864f294cf49fd46c47bf53dbf0.bindTooltip(
+            `<div>`
+            + `THK SAC @ AMK 257` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d484a675c631426d88863710b6784825 = L.marker(
+            [1.34609883764929, 103.717876373079],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d484a675c631426d88863710b6784825.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7f838a7509fd4a838192c22ec8e2948d = L.marker(
+            [1.34731636202056, 103.716329598595],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_7f838a7509fd4a838192c22ec8e2948d.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_09af08ce0c654fdb9476c41602bae4c2 = L.marker(
+            [1.34853287172026, 103.715468146297],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_09af08ce0c654fdb9476c41602bae4c2.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5a934d39fa314b70b3fb108db7697e64 = L.marker(
+            [1.34793619788805, 103.715691141274],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5a934d39fa314b70b3fb108db7697e64.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8a6c2ff7501e44229dad6bad661939c6 = L.marker(
+            [1.36790849360637, 103.84771408812],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_8a6c2ff7501e44229dad6bad661939c6.bindTooltip(
+            `<div>`
+            + `Cheng San FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a5e8104011e0435280a4529f79a9239e = L.marker(
+            [1.35087571532423, 103.716353293406],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a5e8104011e0435280a4529f79a9239e.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5adc453bd9e04e5fa57eb9171bffc299 = L.marker(
+            [1.36499919016782, 103.853111647739],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5adc453bd9e04e5fa57eb9171bffc299.bindTooltip(
+            `<div>`
+            + `COMNET SAC (Ang Mo Kio FSC)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8b0f89b97df64b83bc750d297239c8a6 = L.marker(
+            [1.36452029379674, 103.856631941425],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_8b0f89b97df64b83bc750d297239c8a6.bindTooltip(
+            `<div>`
+            + `COMNET SAC (Ang Mo Kio FSC)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f8393043fad64fdcbe98231650ffba32 = L.marker(
+            [1.37379008201231, 103.849028999189],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f8393043fad64fdcbe98231650ffba32.bindTooltip(
+            `<div>`
+            + `COMNET SAC @ Blk 510` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a5954d50033e4b6fae133ee722690bbd = L.marker(
+            [1.37340092645027, 103.849073244454],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a5954d50033e4b6fae133ee722690bbd.bindTooltip(
+            `<div>`
+            + `COMNET SAC @ Blk 510` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5768ef02495d4a6984750542bc07a97f = L.marker(
+            [1.35280491257396, 103.716740537175],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5768ef02495d4a6984750542bc07a97f.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1b7e7a6bc7e54a6297cb2837a709dd31 = L.marker(
+            [1.37858940772641, 103.840329743826],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_1b7e7a6bc7e54a6297cb2837a709dd31.bindTooltip(
+            `<div>`
+            + `Free Food For All, AMK FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d4ba9d7a6c6b45f988483875e156618e = L.marker(
+            [1.37927553533413, 103.842235624758],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d4ba9d7a6c6b45f988483875e156618e.bindTooltip(
+            `<div>`
+            + `THK SAC@ AMK 645` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_af9724d0efff44efa7010ac939fa7e47 = L.marker(
+            [1.35580085834572, 103.840545905725],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_af9724d0efff44efa7010ac939fa7e47.bindTooltip(
+            `<div>`
+            + `COMNET SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_861ac1a552b64f009925f7948d1c830e = L.marker(
+            [1.36282067865107, 103.835491935798],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_861ac1a552b64f009925f7948d1c830e.bindTooltip(
+            `<div>`
+            + `COMNET SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_326832954e3b4fc2a193ed9b28e48acf = L.marker(
+            [1.34934885933775, 103.732355870224],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_326832954e3b4fc2a193ed9b28e48acf.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0ed50bb38e4c49959455b04c3e461675 = L.marker(
+            [1.3496123936968, 103.732548011802],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_0ed50bb38e4c49959455b04c3e461675.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_83d26837416f4708a50a920662f160c5 = L.marker(
+            [1.33480987880082, 103.723257417625],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_83d26837416f4708a50a920662f160c5.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f421b301ef3b44a4aafbaafc074d2e89 = L.marker(
+            [1.33509694926927, 103.723073150935],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f421b301ef3b44a4aafbaafc074d2e89.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eaf909b8151440c4891826d58e135943 = L.marker(
+            [1.34381009067475, 103.710990466041],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_eaf909b8151440c4891826d58e135943.bindTooltip(
+            `<div>`
+            + `THK SAC @ Boon Lay @ Blk 190` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_51519a448ee94384a0a9f82ff6453cb8 = L.marker(
+            [1.3437656891206, 103.712164032913],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_51519a448ee94384a0a9f82ff6453cb8.bindTooltip(
+            `<div>`
+            + `THK SAC @ Boon Lay @ Blk 190` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9ab4e047327542da9704f07ff0e2d6ed = L.marker(
+            [1.34079841065494, 103.693301990066],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_9ab4e047327542da9704f07ff0e2d6ed.bindTooltip(
+            `<div>`
+            + `Free Food For All` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_306b456ad40c4838ad737d87c0666e7a = L.marker(
+            [1.34700376747991, 103.746170410388],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_306b456ad40c4838ad737d87c0666e7a.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC ` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_03377d952cea4a5eaff0168dac0289c3 = L.marker(
+            [1.34542847522461, 103.750835847871],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_03377d952cea4a5eaff0168dac0289c3.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_cc0279d0b45f4c0ba88103d4588e0e46 = L.marker(
+            [1.38541445977564, 103.758030964055],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_cc0279d0b45f4c0ba88103d4588e0e46.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC @ Blk 634B, Zhenghua Indian Active Executive Committee` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fa3b9d5d38da4124b436e2d2ef3ef953 = L.marker(
+            [1.38541445977564, 103.758030964055],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_fa3b9d5d38da4124b436e2d2ef3ef953.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC @ Blk 634B, Zhenghua Indian Active Executive Committee` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_39670ac7c54948cca18b83577e06d6f7 = L.marker(
+            [1.38003501182776, 103.754145535915],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_39670ac7c54948cca18b83577e06d6f7.bindTooltip(
+            `<div>`
+            + `Fei Yue SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ee7222d0a7549eb9a1127ea61707e6d = L.marker(
+            [1.39181847386696, 103.744050333747],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5ee7222d0a7549eb9a1127ea61707e6d.bindTooltip(
+            `<div>`
+            + `CDL` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d2d8df4b4bc34766ab7a82ef59635540 = L.marker(
+            [1.33925229393406, 103.695690186551],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_d2d8df4b4bc34766ab7a82ef59635540.bindTooltip(
+            `<div>`
+            + `Loving Heart MSC (Jurong)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3132967a42e64a5d8dc2a5fdf035f431 = L.marker(
+            [1.39214690999028, 103.744076077211],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_3132967a42e64a5d8dc2a5fdf035f431.bindTooltip(
+            `<div>`
+            + `CDL, Fei Yue @ Limbang Green @ Blk 574 Choa Chu Kang Street 52 (Eldercare Services)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ec5e48895de4e0a9c12b65f38835295 = L.marker(
+            [1.38319029263489, 103.751878290333],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_5ec5e48895de4e0a9c12b65f38835295.bindTooltip(
+            `<div>`
+            + `Fei Yue FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_48239472d4b04905ac5a416a447d9349 = L.marker(
+            [1.43940804570466, 103.776451916046],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_48239472d4b04905ac5a416a447d9349.bindTooltip(
+            `<div>`
+            + `Care Corner FSC (Woodlands)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f9c2075aac54474e84ad43a58ddb5dcc = L.marker(
+            [1.4389844914277, 103.775758519374],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_f9c2075aac54474e84ad43a58ddb5dcc.bindTooltip(
+            `<div>`
+            + `Care Corner FSC (Woodlands)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9df86508e079412a9674d674ef8bbf61 = L.marker(
+            [1.43012185425065, 103.789718275111],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_9df86508e079412a9674d674ef8bbf61.bindTooltip(
+            `<div>`
+            + `Fei Yue FSC` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c9a019d74a8a46088e529bf80da1316b = L.marker(
+            [1.4544531920186, 103.814035193265],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_c9a019d74a8a46088e529bf80da1316b.bindTooltip(
+            `<div>`
+            + `None` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a4e7f24805324e07aafa75dd7eac6532 = L.marker(
+            [1.44012509686657, 103.792433406587],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a4e7f24805324e07aafa75dd7eac6532.bindTooltip(
+            `<div>`
+            + `Free Food For All` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_515e4123da874d67a7bdd302a60b8308 = L.marker(
+            [1.41500248790414, 103.840907592696],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_515e4123da874d67a7bdd302a60b8308.bindTooltip(
+            `<div>`
+            + `None` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a0936726b62f45d0bcbebc04f05c73e1 = L.marker(
+            [1.41525229749722, 103.841309977195],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_a0936726b62f45d0bcbebc04f05c73e1.bindTooltip(
+            `<div>`
+            + `None` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_35b5e778c5514ede98b362dc87cc779f = L.marker(
+            [1.3992253595761, 103.901496029963],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_48945afdbcbf447cb7728a59e9916ac6);
+        
+    
+        marker_35b5e778c5514ede98b362dc87cc779f.bindTooltip(
+            `<div>`
+            + `COMNET SAC` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
